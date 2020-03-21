@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="lp_talk" name="stt_server" type="stt_server.py" output="screen" />
+  <node pkg="lp_talk" name="tts" type="tts.py" output="screen" />
+  <node pkg="voice_common_pkg" name="listen_command" type="listen_command.py" output="screen" />
+</launch>
